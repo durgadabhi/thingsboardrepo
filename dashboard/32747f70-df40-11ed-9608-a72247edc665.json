@@ -22,7 +22,7 @@
               "realtime" : {
                 "realtimeType" : 1,
                 "interval" : 1000,
-                "timewindowMs" : 86400000,
+                "timewindowMs" : 60000,
                 "quickInterval" : "CURRENT_DAY"
               },
               "history" : {
@@ -30,8 +30,8 @@
                 "interval" : 1000,
                 "timewindowMs" : 60000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1681883897129,
-                  "endTimeMs" : 1681970297129
+                  "startTimeMs" : 1681884219465,
+                  "endTimeMs" : 1681970619465
                 },
                 "quickInterval" : "CURRENT_DAY"
               },
@@ -96,6 +96,20 @@
                 "color" : "#f44336",
                 "settings" : { },
                 "_hash" : 0.12489734597928481
+              }, {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Label",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.968187556226771
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.20343078634047607
               } ]
             } ],
             "displayTimewindow" : true
@@ -136,7 +150,7 @@
           "filter" : {
             "type" : "deviceType",
             "resolveMultiple" : true,
-            "deviceType" : "default",
+            "deviceType" : "deviceControl",
             "deviceNameFilter" : ""
           }
         }
