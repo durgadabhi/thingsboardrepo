@@ -6,7 +6,10 @@
     },
     "configuration" : null,
     "debugMode" : true,
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "d45470b0-ce07-11ed-8fda-79fd1420e8af"
+    },
     "firstRuleNodeId" : null,
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -33,7 +36,7 @@
         "msgCount" : 1,
         "periodInSeconds" : 1,
         "scriptLang" : "JS",
-        "jsScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType }; ",
+        "jsScript" : "var msg = { date : Date()}\nvar metadata = { cv :\"50\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };  ",
         "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "originatorId" : null,
         "originatorType" : null
@@ -43,7 +46,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b9e24900-df3c-11ed-9608-a72247edc665"
+        "id" : "72f3a550-df3e-11ed-9608-a72247edc665"
       },
       "name" : "test",
       "ruleChainId" : null,
@@ -56,7 +59,7 @@
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType}; ",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};  ",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "createdTime" : 0,
@@ -64,7 +67,7 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "b9f13d20-df3c-11ed-9608-a72247edc665"
+        "id" : "72f3cc60-df3e-11ed-9608-a72247edc665"
       },
       "name" : "check script",
       "ruleChainId" : null,
