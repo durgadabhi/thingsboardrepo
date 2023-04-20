@@ -36,7 +36,7 @@
         "msgCount" : 1,
         "periodInSeconds" : 1,
         "scriptLang" : "JS",
-        "jsScript" : "var msg = { date : Date()}\nvar metadata = { cv :\"50\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };  ",
+        "jsScript" : "var msg = { date : Date(), value :\"green\"}\nvar metadata = { cv :\"50\" ,value :\"red\" };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };  ",
         "tbelScript" : "var msg = { temp: 42, humidity: 77 };\nvar metadata = { data: 40 };\nvar msgType = \"POST_TELEMETRY_REQUEST\";\n\nreturn { msg: msg, metadata: metadata, msgType: msgType };",
         "originatorId" : null,
         "originatorType" : null
