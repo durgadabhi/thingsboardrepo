@@ -22,7 +22,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "5e9235a0-bfcb-11ed-aac5-8fafa8b142a8"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "dbe9c810-c25a-11ed-a7d5-7130de4f66b9"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -38,6 +41,7 @@
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
+  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
       "booleanValue" : false,
