@@ -4,14 +4,83 @@
     "assignedCustomers" : null,
     "configuration" : {
       "description" : "",
-      "widgets" : { },
+      "widgets" : {
+        "a5ed2ed7-be1b-0af7-4d4a-3c6bb553945b" : {
+          "isSystemType" : false,
+          "bundleAlias" : "nt",
+          "typeAlias" : "getdevices",
+          "type" : "latest",
+          "title" : "New widget",
+          "image" : null,
+          "description" : null,
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : null,
+              "entityAliasId" : "761565e6-152a-a01b-5e37-bb0e8e134c58",
+              "filterId" : null,
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "attribute",
+                "label" : "name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.5934987466989534
+              } ]
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1682592835670,
+                  "endTimeMs" : 1682679235670
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "New GetDevices",
+            "useDashboardTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a5ed2ed7-be1b-0af7-4d4a-3c6bb553945b"
+        }
+      },
       "states" : {
         "default" : {
           "name" : "testgetdevices",
           "root" : true,
           "layouts" : {
             "main" : {
-              "widgets" : { },
+              "widgets" : {
+                "a5ed2ed7-be1b-0af7-4d4a-3c6bb553945b" : {
+                  "sizeX" : 22,
+                  "sizeY" : 9,
+                  "row" : 0,
+                  "col" : 0
+                }
+              },
               "gridSettings" : {
                 "backgroundColor" : "#eeeeee",
                 "columns" : 24,
